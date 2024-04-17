@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:fluttertut/design/colors.dart';
 import 'package:fluttertut/design/dimensions.dart';
+import 'package:fluttertut/pages/vehicle/vehicle_item.dart';
 
 class VehicleList extends StatelessWidget {
   const VehicleList({super.key});
@@ -22,7 +22,7 @@ class VehicleList extends StatelessWidget {
         return const SizedBox(height: height8);
       },
       itemBuilder: (BuildContext context, int index) {
-        return Container(height: height64, color: surfaceColor);
+        return const VehicleItem();
       },
     );
   }
