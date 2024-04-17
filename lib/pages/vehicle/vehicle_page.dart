@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertut/design/colors.dart';
 import 'package:fluttertut/design/dimensions.dart';
+import 'package:fluttertut/pages/vehicle/vehicle_list.dart';
 
 class VehiclePage extends StatelessWidget {
   const VehiclePage({super.key});
@@ -19,7 +20,7 @@ class VehiclePage extends StatelessWidget {
         backgroundColor: surfaceColor,
         centerTitle: true,
       ),
-      body: Container(color: backgroundColor, child: const Text('Body')),
+      body: Container(color: backgroundColor, child: const VehicleList()),
     );
   }
 }
